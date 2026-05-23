@@ -1,0 +1,323 @@
+/* theme-global.css - Enhanced light theme with improved typography and colors */
+
+/*
+  GOOGLE FONTS RECOMMENDATIONS:
+  
+  Headings (H1, H2, H3):
+  - Font: Poppins, Sora, or Dm Sans (600-700 weight)
+  - Modern, clean, and professional
+  - Add to index.html: <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  Body Text (p, span, labels):
+  - Font: Inter, Outfit, or Roboto (400-500 weight)
+  - Excellent readability and modern appearance
+  - Add to index.html: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+/*
+  COLOR PALETTE OPTIONS FOR LIGHT THEME:
+  
+  PALETTE 1: Professional Slate + Ocean Blue (Recommended)
+  - Primary Text: #0f172a (Near Black - High Contrast)
+  - Secondary Text: #475569 (Slate Gray)
+  - Tertiary Text: #78909c (Muted Gray)
+  - Accent: #0284c7 (Sky Blue)
+  - Background: #ffffff
+  - Cards: #f8fafc
+  
+  PALETTE 2: Minimalist Charcoal + Warm Orange
+  - Primary Text: #1a202c (Charcoal)
+  - Secondary Text: #4a5568 (Warm Gray)
+  - Tertiary Text: #a0aec0 (Light Gray)
+  - Accent: #f97316 (Warm Orange)
+  - Background: #ffffff
+  - Cards: #f9fafb
+  
+  PALETTE 3: Modern Navy + Teal Accent
+  - Primary Text: #0d1b2a (Navy)
+  - Secondary Text: #3d5a73 (Slate)
+  - Tertiary Text: #7b8fa1 (Muted Slate)
+  - Accent: #0891b2 (Teal)
+  - Background: #ffffff
+  - Cards: #f7fbfc (Subtle Cool Tint)
+*/
+
+/* ===== PALETTE 1: PROFESSIONAL SLATE + OCEAN BLUE (ACTIVE) ===== */
+
+[data-theme="light"] {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .min-h-screen {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* H1: Main heading - Bold, high contrast */
+[data-theme="light"] h1 {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+/* H2: Section heading - Slightly softer than H1 */
+[data-theme="light"] h2 {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+}
+
+/* H3: Subsection heading - Still prominent but more refined */
+[data-theme="light"] h3 {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+/* H4 and smaller headings */
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+/* Primary body text - Excellent readability */
+[data-theme="light"] p,
+[data-theme="light"] body,
+[data-theme="light"] label {
+  color: #0f172a !important;
+  font-weight: 400 !important;
+  line-height: 1.6;
+}
+
+/* Secondary/muted text - For descriptions and helper text */
+[data-theme="light"] .text-slate-300,
+[data-theme="light"] .text-slate-200,
+[data-theme="light"] .text-slate-100 {
+  color: #475569 !important;
+}
+
+/* Tertiary text - For even lighter content */
+[data-theme="light"] .text-slate-500,
+[data-theme="light"] .text-slate-400 {
+  color: #78909c !important;
+}
+
+/* Span and inline text */
+[data-theme="light"] span {
+  color: #0f172a !important;
+}
+
+/* List items */
+[data-theme="light"] li {
+  color: #0f172a !important;
+}
+
+/* ===== ACCENT COLORS & INTERACTIVE ELEMENTS ===== */
+
+/* Primary accent - Ocean Blue */
+[data-theme="light"] .text-sky-300,
+[data-theme="light"] .text-brand-300 {
+  color: #0284c7 !important;
+  font-weight: 600;
+}
+
+/* Links - Professional blue with hover effects */
+[data-theme="light"] a {
+  color: #0284c7 !important;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease;
+}
+
+[data-theme="light"] a:hover {
+  color: #0369a1 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+[data-theme="light"] a:active {
+  color: #075985 !important;
+}
+
+/* ===== CARD & CONTAINER BACKGROUNDS ===== */
+
+/* Cards have subtle off-white background for visual separation */
+[data-theme="light"] .bg-slate-900,
+[data-theme="light"] .bg-slate-950,
+[data-theme="light"] [class*="bg-slate"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Slightly darker card option for emphasis */
+[data-theme="light"] .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* ===== BORDERS & DIVIDERS ===== */
+
+[data-theme="light"] .border-slate-800,
+[data-theme="light"] .border,
+[data-theme="light"] [class*="border-slate"] {
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .border-slate-700 {
+  border-color: #cfd9e8 !important;
+}
+
+/* ===== INPUT & FORM FIELDS ===== */
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] .bg-white\/5 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  background-color: #ffffff !important;
+  border-color: #0284c7 !important;
+  color: #0f172a !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1) !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* ===== BUTTONS ===== */
+
+/* Primary buttons */
+[data-theme="light"] button:not(.theme-toggle) {
+  background: linear-gradient(135deg, #0284c7 1%, #0369a1 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.3s ease;
+}
+
+[data-theme="light"] button:not(.theme-toggle):hover {
+  background: linear-gradient(135deg, #0369a1 1%, #075985 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(2, 132, 199, 0.2) !important;
+}
+
+[data-theme="light"] button:not(.theme-toggle):active {
+  transform: translateY(0);
+  background: linear-gradient(135deg, #075985 1%, #04407f 100%) !important;
+}
+
+/* Secondary buttons with border */
+[data-theme="light"] button.secondary,
+[data-theme="light"] a.button {
+  background: transparent !important;
+  color: #0284c7 !important;
+  border: 2px solid #0284c7 !important;
+}
+
+[data-theme="light"] button.secondary:hover,
+[data-theme="light"] a.button:hover {
+  background: rgba(2, 132, 199, 0.1) !important;
+  color: #0369a1 !important;
+  border-color: #0369a1 !important;
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+
+[data-theme="light"] .theme-toggle {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  background: #e2e8f0 !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+  box-shadow: 0 0 20px rgba(2, 132, 199, 0.2) !important;
+}
+
+/* ===== SMOOTH TRANSITIONS ===== */
+
+[data-theme="light"] * {
+  transition:
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 0.3s ease;
+}
+
+.theme-toggle,
+.theme-toggle * {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ===== ACCESSIBILITY: Reduced Motion Support ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="light"] * {
+    transition: none !important;
+  }
+}
+
+/* ===== DARK THEME: Keep existing dark styles ===== */
+
+[data-theme="dark"] * {
+  transition:
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Smooth transitions between themes */
+[data-theme="light"] * {
+  transition:
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Exclude toggle button from transitions */
+.theme-toggle,
+.theme-toggle * {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Dark theme - default (no need to override since it's hardcoded) */
+[data-theme="dark"] * {
+  transition:
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
